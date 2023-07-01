@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.Jobsity.BowlingChallenge.BowlingGameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-30T04:54:15" hostname="MacBook-Pro-de-macbook.local" time="0.019">
-  <properties/>
-  <testcase name="testParseInput()" classname="com.Jobsity.BowlingChallenge.BowlingGameTest" time="0.019"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
