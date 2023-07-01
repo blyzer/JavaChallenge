@@ -1,7 +1,5 @@
 package com.jobsity.BowlingChallenge;
 
-import com.jobsity.BowlingChallenge.BowlingGame;
-import com.jobsity.BowlingChallenge.Player;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -31,7 +29,6 @@ public class BowlingScoreCalculatorTest {
     /**
      * Tests the FormatRolls method of the BowlingScoreCalculator class.
      */
-    @org.junit.Test
     @Test
     public void testFormatRolls() {
         // Create a list of rolls
