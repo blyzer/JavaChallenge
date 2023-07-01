@@ -84,4 +84,62 @@ public class BowlingGameTest {
         Assertions.assertEquals(2, frames2.get(8).getRolls().size());
     }
 
+    @Test
+    public void testCalculateScoreRoll() {
+        // Create a BowlingGame instance
+        BowlingGame game = new BowlingGame();
+
+        // Create a player
+        Player player = new Player("John");
+
+        // Add rolls to the player
+        player.addRoll(4);
+        player.addRoll(5);
+        player.addRoll(6);
+        player.addRoll(3);
+
+        // Add the player to the game
+        game.getPlayers().add(player);
+
+        // Calculate the score for the player
+        String score = game.getScoreRoll(player);
+
+        // Verify the calculated score
+        Assertions.assertEquals("9\t6", score);
+    }@Test
+    public void testCalculateScoreRoll() {
+        // Create a BowlingGame instance
+        BowlingGame game = new BowlingGame();
+
+        // Create a player
+        Player player = new Player("John");
+
+        // Add rolls to the player
+        player.addRoll(4);
+        player.addRoll(5);
+        player.addRoll(6);
+        player.addRoll(3);
+
+        // Add the player to the game
+        game.getPlayers().add(player);
+
+        // Calculate the score for the player
+        String score = game.getScoreRoll(player);
+
+        // Verify the calculated score
+        Assertions.assertEquals("9\t6", score);
+    }
+
+    @Test
+    public void testFormatPinfalls() {
+        // Input list of pinfalls
+        List<Integer> pinfalls = List.of(10, 0, 7, 3, 4, 6, 10, 0, 10, 0, 2, 8, 10, 0, 10, 0, 10, 10, 8, 1);
+
+        // Format the pinfalls
+        String formattedPinfalls = BowlingGame.formatPinfalls(pinfalls);
+
+        // Verify the formatted pinfalls
+        Assertions.assertEquals("X\t7\t/\t4\t6\tX\t0\tX\t0\t2\t/\tX\t0\tX\t0\tX\tX\t8\t1", formattedPinfalls);
+    }
+
 }
